@@ -1,0 +1,104 @@
+// ==========================================
+// MediPredict AI - search.js
+// Live Symptom Search
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const searchInput = document.getElementById("searchInput");
+    const symptomLabels = document.querySelectorAll(".symptom-grid label");
+
+    // Create search count
+    const resultCount = document.createElement("div");
+    resultCount.id = "resultCount";
+    resultCount.style.margin = "15px 0";
+    resultCount.style.fontWeight = "600";
+    resultCount.style.color = "#00d4ff";
+
+    const symptomGrid = document.querySelector(".symptom-grid");
+    symptomGrid.parentNode.insertBefore(resultCount, symptomGrid);
+
+    updateCount();
+
+    // =============================
+    // Search Symptoms
+    // =============================
+
+    searchInput.addEventListener("input", function () {
+
+        const value = this.value.toLowerCase().trim();
+
+        symptomLabels.forEach(label => {
+
+            const symptom = label.textContent.toLowerCase();
+
+            if (symptom.includes(value)) {
+
+                label.style.display = "flex";
+
+            } else {
+
+                label.style.display = "none";
+
+            }
+
+        });
+
+        updateCount();
+
+    });
+
+    // =============================
+    // Count Visible Symptoms
+    // =============================
+
+    function updateCount() {
+
+        let visible = 0;
+
+        symptomLabels.forEach(label => {
+
+            if (label.style.display !== "none") {
+
+                visible++;
+
+            }
+
+        });
+
+        resultCount.innerHTML =
+            `Showing <strong>${visible}</strong> symptom(s)`;
+
+    }
+
+    // =============================
+    // ESC Key Clears Search
+    // =============================
+
+    document.addEventListener("keydown", function (e) {
+
+        if (e.key === "Escape") {
+
+            searchInput.value = "";
+
+            symptomLabels.forEach(label => {
+
+                label.style.display = "flex";
+
+            });
+
+            updateCount();
+
+            searchInput.focus();
+
+        }
+
+    });
+
+    // =============================
+    // Auto Focus
+    // =============================
+
+    searchInput.focus();
+
+});
