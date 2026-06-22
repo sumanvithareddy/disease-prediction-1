@@ -1,0 +1,203 @@
+const diseaseDatabase = [
+
+{
+name:"Common Cold",
+symptoms:["Cold","Cough","Runny Nose","Sore Throat"],
+description:"A viral infection affecting the nose and throat.",
+causes:"Rhinovirus and other respiratory viruses.",
+treatment:"Rest, fluids, paracetamol, cough syrup.",
+prevention:"Wash hands and avoid close contact.",
+diet:"Warm soup, fruits rich in Vitamin C."
+},
+
+{
+name:"Influenza (Flu)",
+symptoms:["Fever","Cough","Body Pain","Fatigue","Headache"],
+description:"A contagious viral respiratory illness.",
+causes:"Influenza virus.",
+treatment:"Rest, fluids, antiviral medicines if prescribed.",
+prevention:"Annual flu vaccine and hand hygiene.",
+diet:"Protein-rich foods and plenty of fluids."
+},
+
+{
+name:"COVID-19",
+symptoms:["Fever","Cough","Loss of Taste","Loss of Smell","Shortness of Breath","Fatigue"],
+description:"Respiratory disease caused by coronavirus.",
+causes:"SARS-CoV-2 virus.",
+treatment:"Isolation, hydration, medicines prescribed by doctor.",
+prevention:"Vaccination, masks and hand hygiene.",
+diet:"Healthy balanced diet with fluids."
+},
+
+{
+name:"Dengue",
+symptoms:["Fever","Headache","Body Pain","Skin Rash"],
+description:"Mosquito-borne viral disease.",
+causes:"Dengue virus.",
+treatment:"Hydration and medical supervision.",
+prevention:"Avoid mosquito bites.",
+diet:"Papaya leaf juice, coconut water and fruits."
+},
+
+{
+name:"Malaria",
+symptoms:["Fever","Sweating","Headache","Fatigue"],
+description:"Parasitic disease transmitted by mosquitoes.",
+causes:"Plasmodium parasite.",
+treatment:"Antimalarial medicines.",
+prevention:"Mosquito nets and repellents.",
+diet:"Iron-rich foods and hydration."
+},
+
+{
+name:"Typhoid",
+symptoms:["Fever","Headache","Abdominal Pain","Fatigue"],
+description:"Bacterial infection affecting intestines.",
+causes:"Salmonella Typhi.",
+treatment:"Antibiotics prescribed by doctor.",
+prevention:"Drink clean water and eat hygienic food.",
+diet:"Soft foods and ORS."
+},
+
+{
+name:"Food Poisoning",
+symptoms:["Vomiting","Diarrhea","Abdominal Pain","Nausea"],
+description:"Illness caused by contaminated food.",
+causes:"Bacteria or viruses in food.",
+treatment:"Hydration and rest.",
+prevention:"Eat fresh food.",
+diet:"ORS, bananas and rice."
+},
+
+{
+name:"Pneumonia",
+symptoms:["Fever","Cough","Chest Pain","Shortness of Breath"],
+description:"Infection causing inflammation in lungs.",
+causes:"Bacteria or viruses.",
+treatment:"Antibiotics or antivirals.",
+prevention:"Vaccination and hygiene.",
+diet:"Protein-rich diet."
+},
+
+{
+name:"Asthma",
+symptoms:["Shortness of Breath","Chest Pain","Cough"],
+description:"Airway inflammation causing breathing difficulty.",
+causes:"Allergens and genetics.",
+treatment:"Inhalers.",
+prevention:"Avoid triggers.",
+diet:"Fruits and vegetables."
+},
+
+{
+name:"Bronchitis",
+symptoms:["Cough","Fatigue","Chest Pain"],
+description:"Inflammation of bronchial tubes.",
+causes:"Viruses or smoking.",
+treatment:"Rest and medicines.",
+prevention:"Avoid smoking.",
+diet:"Warm fluids."
+},
+
+{
+name:"Migraine",
+symptoms:["Headache","Nausea","Vomiting"],
+description:"Severe recurring headache.",
+causes:"Genetics and stress.",
+treatment:"Pain relief medicines.",
+prevention:"Adequate sleep and hydration.",
+diet:"Avoid caffeine and processed foods."
+},
+
+{
+name:"Diabetes",
+symptoms:["Fatigue","Sweating"],
+description:"Condition affecting blood sugar.",
+causes:"Insulin deficiency or resistance.",
+treatment:"Lifestyle changes and medication.",
+prevention:"Healthy lifestyle.",
+diet:"Low-sugar balanced diet."
+},
+
+{
+name:"Hypertension",
+symptoms:["Headache","Dizziness"],
+description:"High blood pressure.",
+causes:"Lifestyle and genetics.",
+treatment:"Blood pressure medicines.",
+prevention:"Reduce salt intake.",
+diet:"Low-sodium diet."
+},
+
+{
+name:"Gastritis",
+symptoms:["Abdominal Pain","Nausea","Vomiting"],
+description:"Inflammation of stomach lining.",
+causes:"Infection or medications.",
+treatment:"Antacids and medication.",
+prevention:"Avoid spicy food.",
+diet:"Soft foods."
+},
+
+{
+name:"Appendicitis",
+symptoms:["Abdominal Pain","Fever","Vomiting"],
+description:"Inflammation of appendix.",
+causes:"Blocked appendix.",
+treatment:"Surgery.",
+prevention:"No guaranteed prevention.",
+diet:"Doctor's advice after surgery."
+},
+
+{
+name:"Kidney Stones",
+symptoms:["Abdominal Pain","Vomiting"],
+description:"Hard mineral deposits in kidneys.",
+causes:"Dehydration.",
+treatment:"Medication or surgery.",
+prevention:"Drink plenty of water.",
+diet:"Reduce salt."
+},
+
+{
+name:"Chickenpox",
+symptoms:["Fever","Skin Rash","Fatigue"],
+description:"Highly contagious viral infection.",
+causes:"Varicella-zoster virus.",
+treatment:"Rest and antiviral medicines.",
+prevention:"Vaccination.",
+diet:"Soft nutritious foods."
+},
+
+{
+name:"Measles",
+symptoms:["Fever","Skin Rash","Cough"],
+description:"Highly contagious viral disease.",
+causes:"Measles virus.",
+treatment:"Supportive care.",
+prevention:"MMR vaccine.",
+diet:"Vitamin A rich foods."
+},
+
+{
+name:"Tuberculosis",
+symptoms:["Cough","Fever","Fatigue","Chest Pain"],
+description:"Bacterial lung infection.",
+causes:"Mycobacterium tuberculosis.",
+treatment:"Long-term antibiotics.",
+prevention:"Early diagnosis.",
+diet:"High-protein foods."
+},
+
+{
+name:"Heart Disease",
+symptoms:["Chest Pain","Shortness of Breath","Sweating"],
+description:"Conditions affecting the heart.",
+causes:"Blocked arteries and lifestyle factors.",
+treatment:"Medication or surgery.",
+prevention:"Exercise and healthy diet.",
+diet:"Low-fat, heart-healthy diet."
+}
+
+];
