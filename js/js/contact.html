@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | MediPredict AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>MediPredict AI</span>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="prediction.html">Prediction</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html" class="active">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <h1>Contact Us</h1>
+
+        <p class="subtitle">
+
+            We'd love to hear from you. Send us your questions,
+            suggestions or feedback.
+
+        </p>
+
+        <div class="contact-wrapper">
+
+            <!-- Left Side -->
+
+            <div class="contact-info">
+
+                <div class="info-card">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <h3>Address</h3>
+
+                    <p>Chennai, Tamil Nadu, India</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fas fa-phone"></i>
+
+                    <h3>Phone</h3>
+
+                    <p>+91 98765 43210</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <h3>Email</h3>
+
+                    <p>support@medipredictai.com</p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="fas fa-clock"></i>
+
+                    <h3>Working Hours</h3>
+
+                    <p>Monday - Saturday</p>
+
+                    <p>9:00 AM - 6:00 PM</p>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+                    <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    required>
+
+                    <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+                    <button type="submit">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="social-media">
+
+            <h2>Follow Us</h2>
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+
+        <!-- Google Map -->
+
+        <div class="map">
+
+            <iframe
+            src="https://www.google.com/maps?q=Chennai&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;border-radius:15px;"
+            loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 MediPredict AI | Developed by <strong>Sumanvitha Reddy</strong>
+
+    </p>
+
+</footer>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("✅ Thank you! Your message has been submitted successfully.");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
