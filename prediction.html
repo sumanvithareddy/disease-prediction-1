@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Disease Prediction | MediPredict AI</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<span>MediPredict AI</span>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="prediction.html">Prediction</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="prediction-page">
+
+<div class="prediction-container">
+
+<h1>Disease Prediction System</h1>
+
+<p class="subtitle">
+
+Select your symptoms below to receive a possible disease prediction.
+
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search symptoms...">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="symptom-grid">
+
+<label><input type="checkbox" value="Fever"> Fever</label>
+
+<label><input type="checkbox" value="Cough"> Cough</label>
+
+<label><input type="checkbox" value="Cold"> Cold</label>
+
+<label><input type="checkbox" value="Headache"> Headache</label>
+
+<label><input type="checkbox" value="Vomiting"> Vomiting</label>
+
+<label><input type="checkbox" value="Diarrhea"> Diarrhea</label>
+
+<label><input type="checkbox" value="Fatigue"> Fatigue</label>
+
+<label><input type="checkbox" value="Body Pain"> Body Pain</label>
+
+<label><input type="checkbox" value="Chest Pain"> Chest Pain</label>
+
+<label><input type="checkbox" value="Shortness of Breath"> Shortness of Breath</label>
+
+<label><input type="checkbox" value="Sore Throat"> Sore Throat</label>
+
+<label><input type="checkbox" value="Runny Nose"> Runny Nose</label>
+
+<label><input type="checkbox" value="Loss of Taste"> Loss of Taste</label>
+
+<label><input type="checkbox" value="Loss of Smell"> Loss of Smell</label>
+
+<label><input type="checkbox" value="Joint Pain"> Joint Pain</label>
+
+<label><input type="checkbox" value="Skin Rash"> Skin Rash</label>
+
+<label><input type="checkbox" value="Dizziness"> Dizziness</label>
+
+<label><input type="checkbox" value="Sweating"> Sweating</label>
+
+<label><input type="checkbox" value="Abdominal Pain"> Abdominal Pain</label>
+
+<label><input type="checkbox" value="Nausea"> Nausea</label>
+
+</div>
+
+<div class="button-area">
+
+<button id="predictBtn">
+
+<i class="fa-solid fa-stethoscope"></i>
+
+Predict Disease
+
+</button>
+
+<button id="clearBtn">
+
+<i class="fa-solid fa-trash"></i>
+
+Clear
+
+</button>
+
+</div>
+
+<div class="result-card">
+
+<h2>
+
+Prediction Result
+
+</h2>
+
+<div id="result">
+
+<h3>No prediction yet.</h3>
+
+<p>
+
+Select symptoms and click <strong>Predict Disease</strong>.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="confidence-card">
+
+<h2>Prediction Confidence</h2>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="confidenceText">
+
+0%
+
+</p>
+
+</div>
+
+<div class="details-grid">
+
+<div class="detail">
+
+<h3>Possible Disease</h3>
+
+<p id="diseaseName">
+
+-
+
+</p>
+
+</div>
+
+<div class="detail">
+
+<h3>Causes</h3>
+
+<p id="causes">
+
+-
+
+</p>
+
+</div>
+
+<div class="detail">
+
+<h3>Treatment</h3>
+
+<p id="treatment">
+
+-
+
+</p>
+
+</div>
+
+<div class="detail">
+
+<h3>Prevention</h3>
+
+<p id="prevention">
+
+-
+
+</p>
+
+</div>
+
+<div class="detail">
+
+<h3>Recommended Diet</h3>
+
+<p id="diet">
+
+-
+
+</p>
+
+</div>
+
+<div class="detail">
+
+<h3>Consult Doctor</h3>
+
+<p>
+
+Yes, if symptoms become severe or persist.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="warning">
+
+<i class="fa-solid fa-circle-exclamation"></i>
+
+This prediction is intended for educational purposes only and is not a medical diagnosis. Always consult a qualified healthcare professional.
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 MediPredict AI | Developed by Sumanvitha Reddy
+
+</p>
+
+</footer>
+
+<script src="js/diseases.js"></script>
+
+<script src="js/prediction.js"></script>
+
+</body>
+
+</html>
